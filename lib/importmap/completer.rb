@@ -21,7 +21,7 @@ When command parameters are done processing, the remaining completion words will
 
 For example, say you had a method for a CLI command with the following form:
 
-  ufo scale service count --cluster development
+  CLI COMMAND service count --cluster development
 
 It's equivalent ruby method:
 
@@ -29,7 +29,7 @@ It's equivalent ruby method:
 
 So typing:
 
-  ufo scale service count [TAB] # there are 3 parameters including the "scale" command according to Thor's CLI processing.
+  CLI COMMAND service count [TAB] # there are 3 parameters including the "scale" command according to Thor's CLI processing.
 
 So the completion should only show options, something like this:
 
@@ -41,7 +41,6 @@ When the ruby method has a splat argument, it's arity is negative.  Here are som
 
    ship(service) = 1
    scale(service, count) = 2
-   ships(*services) = -1
    foo(example, *rest) = -2
 
 Fortunately, negative and positive arity values are processed the same way. So we take simply take the absolute value of the arity and process it the same.
@@ -60,11 +59,11 @@ Here are some test cases, hit TAB after typing the command:
 
 ## Subcommands and Thor::Group Registered Commands
 
-Sometimes the commands are not simple thor commands but are subcommands or Thor::Group commands. A good specific example is the ufo tool.
+Sometimes the commands are not simple thor commands but are subcommands or Thor::Group commands. A good specific example is the CLI COMMAND.
 
-  * regular command: ufo ship
-  * subcommand: ufo docker
-  * Thor::Group command: ufo init
+  * regular command: CLI COMMAND
+  * subcommand: CLI COMMAND
+  * Thor::Group command: CLI COMMAND
 
 Auto-completion accounts for each of these type of commands.
 =end

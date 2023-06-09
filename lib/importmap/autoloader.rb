@@ -13,7 +13,8 @@ module Importmap
       def setup
         loader = Zeitwerk::Loader.new
         loader.inflector = Inflector.new
-        loader.push_dir(File.dirname(__dir__)) # lib
+        lib = File.dirname(__dir__)
+        loader.push_dir(lib) # lib
         loader.setup
       end
     end

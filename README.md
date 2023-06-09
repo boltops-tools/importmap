@@ -1,39 +1,20 @@
 # Importmap
 
-[![Gem Version](https://badge.fury.io/rb/importmap.png)](http://badge.fury.io/rb/importmap)
-[![CircleCI](https://circleci.com/gh/USER/importmap.svg?style=svg)](https://circleci.com/gh/USER/importmap)
-[![Dependency Status](https://gemnasium.com/USER/importmap.png)](https://gemnasium.com/USER/importmap)
-[![Coverage Status](https://coveralls.io/importmaps/USER/importmap/badge.png)](https://coveralls.io/r/USER/importmap)
-[![Join the chat at https://gitter.im/USER/importmap](https://badges.gitter.im/USER/importmap.svg)](https://gitter.im/USER/importmap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Support](https://img.shields.io/badge/get-support-blue.svg)](https://boltops.com?utm_source=badge&utm_medium=badge&utm_campaign=importmap)
+[![Gem Version](https://badge.fury.io/rb/jets-responders.png)](http://badge.fury.io/rb/jets-responders)
 
-TODO: Write a gem description
+[![BoltOps Badge](https://img.boltops.com/boltops/badges/boltops-badge.png)](https://www.boltops.com)
+
+[![BoltOps Learn Badge](https://img.boltops.com/boltops-learn/boltops-learn.png)](https://learn.boltops.com)
+
+Importmap library that is use as a part of [importmap-jets](https://github.com/rubyonjets/importmap-jets).
 
 ## Usage
 
-    importmap hello yourname
-    importmap sub:goodbye yourname
+    importmap audit               # Run a security audit
+    importmap json                # Show the full importmap in json
+    importmap outdated            # Check for outdated packages
+    importmap packages            # Print out packages with version numbers
+    importmap pin [*PACKAGES]     # Pin new packages
+    importmap unpin [*PACKAGES]   # Unpin existing packages
+    importmap version             # prints version
 
-The CLI tool also detects and tasks in the current folder's Rakefile and delegate to those tasks.
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem "importmap"
-
-And then execute:
-
-    bundle
-
-Or install it yourself as:
-
-    gem install importmap
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am "Add some feature"`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
